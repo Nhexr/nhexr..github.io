@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    overflow: hidden;
+    overflow: scroll;
     width: 100vw;
     height: 300vh;
     background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
@@ -63,10 +63,6 @@ html{
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-}
-
-body{
-  height: 100%;
 }
 
 .hero-section{
