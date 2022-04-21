@@ -61,8 +61,10 @@ function init() {
     let lambertMaterial = new THREE.MeshPhongMaterial({ map: texturenucleus });
     nucleus = new THREE.Mesh(icosahedronGeometry, lambertMaterial);
     scene.add(nucleus);
-
-
+    nucleus.onclick = function () {
+        location.href = "inferno/inferno.html";
+    };
+    
     /*    Sphere  Background   */
     textureSphereBg.anisotropy = 16;
     let geometrySphereBg = new THREE.SphereBufferGeometry(150, 40, 40);
@@ -99,6 +101,7 @@ function init() {
     starsMaterial.depthWrite = false;  
     stars = new THREE.Points(starsGeometry, starsMaterial);
     scene.add(stars);
+    
 
 
     /*    Fixed Stars   */
